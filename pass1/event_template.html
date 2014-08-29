@@ -42,7 +42,7 @@
 			* @theme page
 			*/
 			#bodyCell{
-				/*@editable*/ border-top:4px solid #BBBBBB;
+				/*@editable*/ border-top:0;
 			}
 
 			/**
@@ -274,13 +274,39 @@
 				max-width:560px;
 			}
             
-            .eventTable {
-                padding:10px;
+            
+            /**
+			* @tab Columns
+			* @section left column text
+			* @tip Set the styling for your email's left column content text. Choose a size and color that is easy to read.
+			*/
+			.leftColumnContent {
+				/*@editable*/ color:#4b4b4b;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:12px;
+				/*@editable*/ line-height:150%;
+				padding:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Columns
+			* @section right column text
+			* @tip Set the styling for your email's right column content text. Choose a size and color that is easy to read.
+			*/
+			.rightColumnContent {
+				/*@editable*/ color:#4b4b4b;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:10px;
+				/*@editable*/ line-height:150%;
+				padding-top:10px;
+                padding-left:10px;
+                padding-bottom:10px;
                 padding-right:0;
+				text-align:right;
                 width:160px;
-                text-align:right;
                 border-top:6px solid #dc7242;
-            }
+			}
             
             .eventDate {
                 color:#dc7242;
@@ -343,6 +369,8 @@
 				/*@editable*/ background-color:#4b4b4b;
 				/*@editable*/ border-top:0;
 			}
+            
+            
 
 			/**
 			* @tab Footer
@@ -396,7 +424,14 @@
 					max-width:600px !important;
 					/*@editable*/ width:100% !important;
 				}
+                
+                .leftColumnContent {
+                    font-size:14px !important;
+                    display:block !important;
+                    width:100% !important;
+                }
 
+                
 				/**
 				* @tab Mobile Styles
 				* @section heading 1
@@ -481,10 +516,47 @@
 				* @section footer text
 				* @tip Make the body content text larger in size for better readability on small screens.
 				*/
+                
 				.footerContent{
 					/*@editable*/ font-size:10px !important;
 					/*@editable*/ line-height:115% !important;
 				}
+                
+                .rightColumnContent {
+                    padding-top:20px !important;
+                    padding-left:0 !important;
+                    display:block !important;
+                    width:100% !important;
+                    border-top:none !important;
+                    text-align:left !important;
+                    line-height:180% !important;
+                }
+                
+                .specialTable {
+                    width:100% !important;
+                    text-align:left !important;
+                }
+                
+                .eventDate {
+                    font-size:13px !important;
+                }
+
+                .eventTime {
+                    font-size:13px !important;
+                }
+
+                .eventLocale {
+                    font-size:13px !important;
+                }
+
+                .eventPrice {
+                    font-size:13px !important;
+                }
+
+                .ticketBuyButton {
+                    font-size:13px !important;
+                }
+                
 
 				.footerContent a{display:block !important;} /* Place footer social and utility links on their own lines, for easier access */
 			}
@@ -525,7 +597,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
                                         <tr>
                                             <td valign="top" class="headerContent">
-                                            	<img src="Alden_header.jpg" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                            	<img src="http://www.operaamerica.org/content/pubs/eblasts/2014/elements/Alden_header.jpg" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
                                             </td>
                                         </tr>
                                     </table>
@@ -537,32 +609,50 @@
                                 	<!-- BEGIN BODY // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateBody">
                                         <tr>
-                                            <td valign="top" class="bodyContent" mc:edit="body_content">
+                                            <td valign="top" class="bodyContent">
                                                 
-                                                <!-- date + time table -->
-                                                <table align="right">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                     <tr>
-                                                        <td class="eventTable">
-                                                            <span class="eventDate">Tuesday, September 9</span><br />
-                                                            <span class="eventTime">7:00 p.m.</span><br />
-                                                            <span class="eventLocale">The National Opera Center<br />
-                                                            330 Seventh Avenue<br />
-                                                            New York, NY 10001</span><br /><br />
-                                                            <span class="eventPrice">Tickets: $25<br />
-                                                            Free for members</span>
-                                                            <table align="right">
+                                                        <td valign="top" mc:edit="body_content" class="leftColumnContent">
+                                                            Stage director <strong>Christopher Alden</strong> has been acclaimed for infusing traditional operas with fresh, contemporary themes and bringing innovative concepts to some of the world’s most famous houses. Alden’s productions, which have been hailed as "provocative" and "elegant" by <em>The New York Times</em>, challenge opera audiences with their modernist aesthetic and rich psychological undertones. Join us for a special <em>Conversation</em> with this celebrated director, who will reflect on his career and share stories with OPERA America President/CEO Marc A. Scorca.
+                                                        </td>
+                                                        <td valign="top" style="padding-right:0;" mc:edit="ticketInfo" class="rightColumnContent">
+                                                            <table class="specialTable" align="right">
                                                                 <tr>
-                                                                    <td class="ticketBuyButton">
-                                                                        <a href="#" style="color:white;">Buy Tickets >></a>
+                                                                    <td style="padding-right:0;text-align:right;" class="specialTable">
+                                                                        <span class="eventDate">Tuesday, September 9</span><br />
+                                                                        <span class="eventTime">7:00 p.m.</span><br />
+                                                                        <span class="eventLocale">The National Opera Center<br />
+                                                                        330 Seventh Avenue<br />
+                                                                        New York, NY 10001</span><br /><br />
+                                                                        <span class="eventPrice"><span style="color:black;">Tickets: $25</span><br />
+                                                                        Free for members</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <table align="right">
+                                                                            <tr>
+                                                                                <td class="ticketBuyButton">
+                                                                                    <a href="#" style="color:white;">Buy Tickets >></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
                                                                     </td>
                                                                 </tr>
                                                             </table>
                                                         </td>
                                                     </tr>
                                                 </table>
-                                                
-                                                Stage director <strong>Christopher Alden</strong> has been acclaimed for infusing traditional operas with fresh, contemporary themes and bringing innovative concepts to some of the world’s most famous houses. Alden’s productions, which have been hailed as "provocative" and "elegant" by <em>The New York Times</em>, challenge opera audiences with their modernist aesthetic and rich psychological undertones. Join us for a special <em>Conversation</em> with this celebrated director, who will reflect on his career and share stories with OPERA America President/CEO Marc A. Scorca.<br /><br />
  
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END BODY1 -->
+                                    <!-- // START BODY2 -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateBody">
+                                        <tr>
+                                            <td valign="top" class="bodyContent" mc:hideable mc:edit="extraBody" mc:hideable style="border-top:0;padding-top:0;">
                                                 <strong>Advance reservations are highly recommended.</strong><br />
                                                 Visit <a href="http://operaamerica.org/Conversations">operaamerica.org/Conversations</a> for tickets.<br /><br />
 
@@ -571,15 +661,16 @@
 
                                                 Watch free live streams of all <em>Onstage at the Opera Center</em> events at <a href="http://operaamerica.org/Live">operaamerica.org/Live</a>.<br />
                                                 View recordings of previous events at <a href="http://youtube.com/OPERAAmerica">youtube.com/OPERAAmerica</a>.
- 
+
+                                                
                                             </td>
                                         </tr>
                                     </table>
-                                    <!-- // END BODY -->
+                                    <!-- // END BODY2 -->
                                     <!-- // START UPCOMING EVENTS -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateBody">
                                         <tr>
-                                            <td valign="top" class="bodyContent" mc:hideable mc:edit="body_content" style="border-top:0;">
+                                            <td valign="top" class="bodyContent" mc:hideable mc:edit="upcoming_events" style="border-top:0;">
                                                 <table width="100%">
                                                     <tr>
                                                         <td class="upcomingEventsHeader">
@@ -612,7 +703,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
                                         <tr>
                                             <td valign="top" class="footerContent" mc:edit="footer_content00">
-                                                <a href="*|TWITTER:PROFILEURL|*">Follow on Twitter</a>&nbsp;&nbsp;&nbsp;<a href="*|FACEBOOK:PROFILEURL|*">Friend on Facebook</a>&nbsp;&nbsp;&nbsp;<a href="*|FORWARD|*">Forward to Friend</a>&nbsp;
+                                                <a href="http://www.twitter.com/OPERAAmerica">Follow on Twitter</a>&nbsp;&nbsp;&nbsp;<a href="http://www.facebook.com/OPERAAmerica">Like on Facebook</a>&nbsp;&nbsp;&nbsp;<a href="*|FORWARD|*">Forward to Friend</a>&nbsp;
                                             </td>
                                         </tr>
                                         <tr>
