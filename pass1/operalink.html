@@ -32,7 +32,7 @@
 			* @theme page
 			*/
 			body, #bodyTable{
-				/*@editable*/ background-color:#DEE0E2;
+				/*@editable*/ background-color:#ebebeb;
 			}
 
 			/**
@@ -42,7 +42,7 @@
 			* @theme page
 			*/
 			#bodyCell{
-				/*@editable*/ border-top:4px solid #BBBBBB;
+				/*@editable*/ border-top:0;
 			}
 
 			/**
@@ -51,7 +51,7 @@
 			* @tip Set the border for your email.
 			*/
 			#templateContainer{
-				/*@editable*/ border:1px solid #BBBBBB;
+				/*@editable*/ border:1px solid #e0e0e0;
 			}
 
 			/**
@@ -61,14 +61,15 @@
 			* @style heading 1
 			*/
 			h1{
-				/*@editable*/ color:#202020 !important;
+				/*@editable*/ color:#7e93a7 !important;
 				display:block;
-				/*@editable*/ font-family:Helvetica;
-				/*@editable*/ font-size:26px;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:16px;
 				/*@editable*/ font-style:normal;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
 				/*@editable*/ letter-spacing:normal;
+                text-transform:uppercase;
 				margin-top:0;
 				margin-right:0;
 				margin-bottom:10px;
@@ -83,17 +84,18 @@
 			* @style heading 2
 			*/
 			h2{
-				/*@editable*/ color:#404040 !important;
+				/*@editable*/ color:#7e93a7 !important;
 				display:block;
-				/*@editable*/ font-family:Helvetica;
-				/*@editable*/ font-size:20px;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:12px;
 				/*@editable*/ font-style:normal;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
 				/*@editable*/ letter-spacing:normal;
+                text-transform:uppercase;
 				margin-top:0;
 				margin-right:0;
-				margin-bottom:10px;
+				margin-bottom:0px;
 				margin-left:0;
 				/*@editable*/ text-align:left;
 			}
@@ -105,12 +107,12 @@
 			* @style heading 3
 			*/
 			h3{
-				/*@editable*/ color:#606060 !important;
+				/*@editable*/ color:#796e65 !important;
 				display:block;
-				/*@editable*/ font-family:Helvetica;
-				/*@editable*/ font-size:16px;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:12px;
 				/*@editable*/ font-style:italic;
-				/*@editable*/ font-weight:normal;
+				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
 				/*@editable*/ letter-spacing:normal;
 				margin-top:0;
@@ -119,6 +121,10 @@
 				margin-left:0;
 				/*@editable*/ text-align:left;
 			}
+            
+            h3 a{
+                font-weight:bold !important;
+            }
 
 			/**
 			* @tab Page
@@ -127,10 +133,10 @@
 			* @style heading 4
 			*/
 			h4{
-				/*@editable*/ color:#808080 !important;
+				/*@editable*/ color:#796e65 !important;
 				display:block;
-				/*@editable*/ font-family:Helvetica;
-				/*@editable*/ font-size:14px;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:10px;
 				/*@editable*/ font-style:italic;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ line-height:100%;
@@ -139,7 +145,7 @@
 				margin-right:0;
 				margin-bottom:10px;
 				margin-left:0;
-				/*@editable*/ text-align:left;
+				/*@editable*/ text-align:right;
 			}
 
 			/* ========== Header Styles ========== */
@@ -151,8 +157,8 @@
 			* @theme header
 			*/
 			#templatePreheader{
-				/*@editable*/ background-color:#F4F4F4;
-				/*@editable*/ border-bottom:1px solid #CCCCCC;
+				/*@editable*/ background-color:#ffffff;
+				/*@editable*/ border-bottom:0;
 			}
 
 			/**
@@ -162,7 +168,7 @@
 			*/
 			.preheaderContent{
 				/*@editable*/ color:#808080;
-				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:10px;
 				/*@editable*/ line-height:125%;
 				/*@editable*/ text-align:left;
@@ -174,7 +180,7 @@
 			* @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
 			*/
 			.preheaderContent a:link, .preheaderContent a:visited, /* Yahoo! Mail Override */ .preheaderContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#606060;
+				/*@editable*/ color:#808080;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
@@ -188,7 +194,7 @@
 			#templateHeader{
 				/*@editable*/ background-color:#F4F4F4;
 				/*@editable*/ border-top:1px solid #FFFFFF;
-				/*@editable*/ border-bottom:1px solid #CCCCCC;
+				/*@editable*/ border-bottom:4px solid #ffc72c;
 			}
 
 			/**
@@ -198,7 +204,7 @@
 			*/
 			.headerContent{
 				/*@editable*/ color:#505050;
-				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:20px;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
@@ -216,7 +222,7 @@
 			* @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
 			*/
 			.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#EB4102;
+				/*@editable*/ color:#505050;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
@@ -233,10 +239,10 @@
 			* @section body style
 			* @tip Set the background color and borders for your email's body area.
 			*/
-			#templateBody{
-				/*@editable*/ background-color:#F4F4F4;
+			.templateBody{
+				/*@editable*/ background-color:#ffffff;
 				/*@editable*/ border-top:1px solid #FFFFFF;
-				/*@editable*/ border-bottom:1px solid #CCCCCC;
+				/*@editable*/ border-bottom:0;
 			}
 
 			/**
@@ -246,11 +252,11 @@
 			* @theme main
 			*/
 			.bodyContent{
-				/*@editable*/ color:#505050;
-				/*@editable*/ font-family:Helvetica;
-				/*@editable*/ font-size:16px;
+				/*@editable*/ color:#796e65;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:12px;
 				/*@editable*/ line-height:150%;
-				padding-top:20px;
+				padding-top:10px;
 				padding-right:20px;
 				padding-bottom:20px;
 				padding-left:20px;
@@ -263,9 +269,9 @@
 			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
 			*/
 			.bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#EB4102;
-				/*@editable*/ font-weight:normal;
-				/*@editable*/ text-decoration:underline;
+				/*@editable*/ color:#7e93a7;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ text-decoration:none;
 			}
 
 			.bodyContent img{
@@ -276,7 +282,9 @@
 
 			/* ========== Column Styles ========== */
 
-			.templateColumnContainer{width:260px;}
+			.templateColumnContainer{
+                width:260px;
+                padding:10px;}
 
 			/**
 			* @tab Columns
@@ -284,9 +292,9 @@
 			* @tip Set the background color and borders for your email's column area.
 			*/
 			#templateColumns{
-				/*@editable*/ background-color:#F4F4F4;
-				/*@editable*/ border-top:1px solid #FFFFFF;
-				/*@editable*/ border-bottom:1px solid #CCCCCC;
+				/*@editable*/ background-color:#ffffff;
+				/*@editable*/ border-top:0;
+				/*@editable*/ border-bottom:0;
 			}
 
 			/**
@@ -295,15 +303,14 @@
 			* @tip Set the styling for your email's left column content text. Choose a size and color that is easy to read.
 			*/
 			.leftColumnContent{
-				/*@editable*/ color:#505050;
-				/*@editable*/ font-family:Helvetica;
-				/*@editable*/ font-size:14px;
+				/*@editable*/ color:#796e65;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:12px;
 				/*@editable*/ line-height:150%;
-				padding-top:0;
-				padding-right:20px;
-				padding-bottom:20px;
-				padding-left:20px;
+				padding:10px;
+                padding-bottom:30px;
 				/*@editable*/ text-align:left;
+                border-top:4px solid #ffc72c;
 			}
 
 			/**
@@ -312,9 +319,9 @@
 			* @tip Set the styling for your email's left column content links. Choose a color that helps them stand out from your text.
 			*/
 			.leftColumnContent a:link, .leftColumnContent a:visited, /* Yahoo! Mail Override */ .leftColumnContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#EB4102;
-				/*@editable*/ font-weight:normal;
-				/*@editable*/ text-decoration:underline;
+				/*@editable*/ color:#796e65;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ text-decoration:none;
 			}
 
 			/**
@@ -323,15 +330,14 @@
 			* @tip Set the styling for your email's right column content text. Choose a size and color that is easy to read.
 			*/
 			.rightColumnContent{
-				/*@editable*/ color:#505050;
-				/*@editable*/ font-family:Helvetica;
-				/*@editable*/ font-size:14px;
+				/*@editable*/ color:#796e65;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:12px;
 				/*@editable*/ line-height:150%;
-				padding-top:0;
-				padding-right:20px;
-				padding-bottom:20px;
-				padding-left:20px;
+				padding:10px;
+                padding-bottom:30px;
 				/*@editable*/ text-align:left;
+                border-top:4px solid #ffc72c;
 			}
 
 			/**
@@ -340,7 +346,7 @@
 			* @tip Set the styling for your email's right column content links. Choose a color that helps them stand out from your text.
 			*/
 			.rightColumnContent a:link, .rightColumnContent a:visited, /* Yahoo! Mail Override */ .rightColumnContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#EB4102;
+				/*@editable*/ color:#796e65;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
@@ -350,6 +356,17 @@
 				height:auto;
 				max-width:260px;
 			}
+            
+            .eventsTable {
+                color:#796e65;
+				font-family:Arial;
+				font-size:12px;
+				line-height:150%;
+				text-align:left;
+                padding-left:10px;
+                padding-right:10px;
+                padding-bottom:5px;
+            }
 
 			/* ========== Footer Styles ========== */
 
@@ -372,7 +389,7 @@
 			*/
 			.footerContent{
 				/*@editable*/ color:#808080;
-				/*@editable*/ font-family:Helvetica;
+				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:10px;
 				/*@editable*/ line-height:150%;
 				padding-top:20px;
@@ -423,7 +440,7 @@
 				* @tip Make the first-level headings larger in size for better readability on small screens.
 				*/
 				h1{
-					/*@editable*/ font-size:24px !important;
+					/*@editable*/ font-size:18px !important;
 					/*@editable*/ line-height:100% !important;
 				}
 
@@ -433,7 +450,7 @@
 				* @tip Make the second-level headings larger in size for better readability on small screens.
 				*/
 				h2{
-					/*@editable*/ font-size:20px !important;
+					/*@editable*/ font-size:14px !important;
 					/*@editable*/ line-height:100% !important;
 				}
 
@@ -443,7 +460,7 @@
 				* @tip Make the third-level headings larger in size for better readability on small screens.
 				*/
 				h3{
-					/*@editable*/ font-size:18px !important;
+					/*@editable*/ font-size:14px !important;
 					/*@editable*/ line-height:100% !important;
 				}
 
@@ -453,13 +470,13 @@
 				* @tip Make the fourth-level headings larger in size for better readability on small screens.
 				*/
 				h4{
-					/*@editable*/ font-size:16px !important;
+					/*@editable*/ font-size:12px !important;
 					/*@editable*/ line-height:100% !important;
 				}
 
 				/* ======== Header Styles ======== */
 
-				#templatePreheader{display:none !important;} /* Hide the template preheader to save space */
+				#preheaderPreview{display:none !important;} /* Hide the template preheader to save space */
 
 				/**
 				* @tab Mobile Styles
@@ -490,13 +507,16 @@
 				* @tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
 				*/
 				.bodyContent{
-					/*@editable*/ font-size:18px !important;
+					/*@editable*/ font-size:14px !important;
 					/*@editable*/ line-height:125% !important;
 				}
 
 				/* ======== Column Styles ======== */
 
-				.templateColumnContainer{display:block !important; width:100% !important;}
+				.templateColumnContainer{
+                    display:block !important;
+                    width:94% !important;
+                }
 
 				/**
 				* @tab Mobile Styles
@@ -515,7 +535,7 @@
 				* @tip Make the left column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
 				*/
 				.leftColumnContent{
-					/*@editable*/ font-size:16px !important;
+					/*@editable*/ font-size:14px !important;
 					/*@editable*/ line-height:125% !important;
 				}
 
@@ -525,8 +545,14 @@
 				* @tip Make the right column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
 				*/
 				.rightColumnContent{
-					/*@editable*/ font-size:16px !important;
+					/*@editable*/ font-size:14px !important;
 					/*@editable*/ line-height:125% !important;
+				}
+                
+                .eventsTable{
+					font-size:14px !important;
+					line-height:125% !important;
+                    padding-right:10px !important;
 				}
 
 				/* ======== Footer Styles ======== */
@@ -537,7 +563,7 @@
 				* @tip Make the body content text larger in size for better readability on small screens.
 				*/
 				.footerContent{
-					/*@editable*/ font-size:14px !important;
+					/*@editable*/ font-size:10px !important;
 					/*@editable*/ line-height:115% !important;
 				}
 
@@ -557,14 +583,18 @@
                                 	<!-- BEGIN PREHEADER // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
                                         <tr>
-                                            <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" mc:edit="preheader_content00">
-                                                Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients.
+                                            <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" mc:edit="preheader_content00" id="preheaderPreview">
+                                                <div mc:edit="std_preheader_content">Preview text</div><br />
+                                                <!-- *|IFNOT:ARCHIVE_PAGE|* -->
+                                                Having trouble viewing this message? <a href="*|ARCHIVE|*" target="_blank" style="font-weight:bold;">Click here.</a><br>
+                                                <!-- *|END:IF|* -->
+
+                                                <a href="*|FORWARD|*" target="_blank" style="font-weight:bold;">Forward to a friend
+                                                </a>
                                             </td>
-                                            <!-- *|IFNOT:ARCHIVE_PAGE|* -->
-                                            <td valign="top" width="180" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:0;" mc:edit="preheader_content01">
-                                                Email not displaying correctly?<br /><a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.
+                                            <td valign="center" width="180" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:0;">
+                                                <a href="http://www.operaamerica.org" target="_blank"><img src="http://www.operaamerica.org/content/pubs/eblasts/2013/elements/fy14headers/logosmall.png" border="0" style="float:right;"></a>
                                             </td>
-                                            <!-- *|END:IF|* -->
                                         </tr>
                                     </table>
                                     <!-- // END PREHEADER -->
@@ -576,7 +606,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
                                         <tr>
                                             <td valign="top" class="headerContent">
-                                            	<img src="http://gallery.mailchimp.com/2425ea8ad3/images/header_placeholder_600px.png" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                            	<img src="http://www.operaamerica.org/content/pubs/enewsletter/2015/oc/operacenter_header.jpg" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
                                             </td>
                                         </tr>
                                     </table>
@@ -585,61 +615,119 @@
                             </tr>
                         	<tr>
                             	<td align="center" valign="top">
-                                	<!-- BEGIN BODY // -->
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
+                                	<!-- OPERA CENTER MANAGER // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateBody">
                                         <tr>
-                                            <td valign="top" class="bodyContent" mc:edit="body_content">
-                                                <h1>Designing Your Template</h1>
-                                                <h3>Creating a good-looking email is simple</h3>
-                                                Customize your template by clicking on the style editor tabs up above. Set your fonts, colors, and styles. After setting your styling is all done you can click here in this area, delete the text, and start adding your own awesome content.
-                                                <br />
-                                                <br />
-                                                <h2>Styling Your Content</h2>
-                                                <h4>Make your email easy to read</h4>
-                                                After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style. 
+                                            <td valign="top" class="bodyContent" mc:edit="fromOCmgr">
+                                                <h1>From the Opera Center</h1>
+                                                The month of September always marks a return: Students return to school, summer vacationers return to work and many of our beloved arts organizations return to the stage with new production seasons. At the Opera Center, we look forward to seeing the many familiar faces returning to us, as well!<br /><br />
+ 
+                                                September also marks a season of change with regard to our rental rates. Beginning September 2, the Board Room will be available for a new low fee, while other spaces, which were discounted in previous months, will return to their regular rates. During the month of September, you can also receive a $10 discount on the hourly rate in our Rehearsal Hall. Click <a href="http://www.operaamerica.org/content/about/operacenter/index.aspx?loc=rates">here</a> for a full list of rates and further details.<br /><br />
+
+                                                Whether you’re a weekly visitor or an annual renter at the Opera Center, we look forward to welcoming you back soon!<br /><br />
+
+                                                My very best,<br />
+                                                <img src="http://gallery.mailchimp.com/134d3f3fa56cf83d132b124cb/images/fe20084d-b44f-414d-b62f-6bf09ccf81ea.png" width="100"><br />
+                                                Nicholas Roberts<br />
+                                                Opera Center Manager
                                             </td>
                                         </tr>
                                     </table>
-                                    <!-- // END BODY -->
+                                    
+                                    <!-- UPCOMING EVENTS // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" mc:hideable class="templateBody">
+                                        <tr>
+                                            <td valign="top" style="padding-left:10px;padding-right:10px;">
+                                                <table>
+                                                    <tr>
+                                                        <td class="bodyContent" mc:edit="standingOvation1" style="border-top:4px solid #ffc72c;padding-left:10px;padding-right:10px;">
+                                                            <h1>Standing Ovation</h1>
+                                                            As September pulls students away from summer vacation and back into classrooms, we want to take a moment to give a standing ovation to those teachers who have profoundly shaped our careers and our characters. Tweet with <a href="https://twitter.com/intent/tweet?text=%23MyOperaCenter">#MyOperaCenter</a> to let us know the teachers who have impacted your life and profession. 
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                    <!-- UPCOMING DEADLINES // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" mc:hideable class="templateBody">
+                                        <tr>
+                                            <td valign="top" style="padding-left:10px;padding-right:10px;">
+                                                <table>
+                                                    <tr>
+                                                        <td class="bodyContent" mc:edit="standingOvation1" style="border-top:4px solid #ffc72c;padding-left:10px;padding-right:10px;">
+                                                            <h1>Standing Ovation</h1>
+                                                            As September pulls students away from summer vacation and back into classrooms, we want to take a moment to give a standing ovation to those teachers who have profoundly shaped our careers and our characters. Tweet with <a href="https://twitter.com/intent/tweet?text=%23MyOperaCenter">#MyOperaCenter</a> to let us know the teachers who have impacted your life and profession. 
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </td>
                             </tr>
                         	<tr>
                             	<td align="center" valign="top">
                                 	<!-- BEGIN COLUMNS // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns">
-                                    	<tr mc:repeatable>
+                                    	<tr>
                                         	<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
-                                            	<table border="0" cellpadding="20" cellspacing="0" width="100%">
-                                                	<tr>
-                                                    	<td class="leftColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/header_placeholder_260px.png" style="max-width:260px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+                                            	
+                                                <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                    
+                                                    <!-- IN THE NEWS // -->
+                                                    <tr>
+                                                    	<td valign="top" class="leftColumnContent" mc:edit="upcomingEvents">
+                                                            <h1>Upcoming Events</h1>
+                                                            
+                                                            <h4>* Member Event</h4>
+                                                            <br />
+                                                            <h3>Visit <a href="http://www.operaamerica.org/Calendar">operaamerica.org/Calendar</a> for more.</h3>
                                                         </td>
                                                     </tr>
+                                                    
+                                                    <!-- MEMBER PRESSROOM // -->
                                                     <tr>
-                                                    	<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
+                                                    	<td valign="top" class="leftColumnContent" mc:edit="upcomingEvents">
+                                                            <h1>Upcoming Events</h1>
+                                                            
+                                                            <h4>* Member Event</h4>
                                                             <br />
-                                                            <br />
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+                                                            <h3>Visit <a href="http://www.operaamerica.org/Calendar">operaamerica.org/Calendar</a> for more.</h3>
                                                         </td>
                                                     </tr>
                                                 </table>
+                                                
                                             </td>
                                         	<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
-                                            	<table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                            	
+                                                <!-- FROM THE ARCHIVES // -->
+                                                <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                 	<tr>
-                                                    	<td class="rightColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/header_placeholder_260px.png" style="max-width:260px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
+                                                    	<td valign="top" class="rightColumnContent" mc:edit="upcomingSpecials">
+                                                            <h1>Upcoming Specials</h1>
+                                                            Rent the Rehearsal Hall for your September rehearsal or event and receive $10 off the hourly rate.*<br /><br />
+                                                            <h4>*Discount applies to new reservations only and cannot be combined with any other special or discount.</h4>
                                                         </td>
                                                     </tr>
+                                                    
+                                                    <!-- MAGAZINE // -->
                                                     <tr>
-                                                    	<td valign="top" class="rightColumnContent" mc:edit="right_column_content">
-                                                            <h3>Repeatable Content</h3>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            <br />
-                                                            <br />
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+                                                    	<td valign="top" class="rightColumnContent" mc:edit="standingOvation2" mc:hideable>
+                                                            <h1>Standing Ovation</h1>
+                                                            As September pulls students away from summer vacation and back into classrooms, we want to take a moment to give a standing ovation to those teachers who have profoundly shaped our careers and our characters. Tweet with <a href="https://twitter.com/intent/tweet?text=%23MyOperaCenter">#MyOperaCenter</a> to let us know the teachers who have impacted your life and profession. 
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                    <!-- DID YOU KNOW // -->
+                                                    <tr>
+                                                    	<td valign="top" class="rightColumnContent" mc:edit="futureBookings">
+                                                            <h1>Future Bookings</h1>
+                                                            <h2>Professional Company Members</h2> can book spaces through <strong>September 2015</strong>.<br /><br />
+                                                            <h2>Associate Members, Educational Producing Associates or Business Members</h2> can book spaces through <strong>June 2015</strong>.<br /><br />
+                                                            <h2>Individual Members</h2> can book spaces through <strong>March 2015</strong>.<br /><br />
+                                                            <h2>Non-Members</h2> can book spaces through <strong>December 2014</strong>.<br /><br />
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -647,6 +735,27 @@
                                         </tr>
                                     </table>
                                     <!-- // END COLUMNS -->
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td align="center" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" mc:hideable class="templateBody">
+                                        <tr>
+                                            <td valign="top" style="padding-left:10px;padding-right:10px;">
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td class="bodyContent" mc:edit="standingOvation1" style="border-top:4px solid #ffc72c;padding-left:10px;padding-right:10px;">
+                                                            <h1>Quick Links</h1>
+                                                            <h2>News and information for:</h2>
+                                                            <a href="">Jobs in Opera</a> / <a href="">Artists</a> / <a href="">Artistic Directors</a> / <a href="">Board/Governance</a> / <a href="">Education</a> / <a href="">Finance/General Operations</a> / <a href="">General Operations</a> / <a href="">Marketing/PR</a> / <a href="">Trustees/Donors</a><br /><br />
+                                                            <h2>Social Media:</h2>
+                                                            <a href="">Facebook</a> / <a href="">Twitter (@OPERAAmerica)</a> / <a href="">Twitter (NatOperaCenter)</a> / <a href="">YouTube</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </td>
                             </tr>
                         	<tr>

@@ -482,7 +482,7 @@
 
 				/* ======== Header Styles ======== */
 
-				#templatePreheader{display:none !important;} /* Hide the template preheader to save space */
+				#preheaderPreview{display:none !important;} /* Hide the template preheader to save space */
 
 				/**
 				* @tab Mobile Styles
@@ -519,7 +519,10 @@
 
 				/* ======== Column Styles ======== */
 
-				.templateColumnContainer{display:block !important; width:100% !important;}
+				.templateColumnContainer{
+                    display:block !important;
+                    width:94% !important;
+                }
 
 				/**
 				* @tab Mobile Styles
@@ -555,6 +558,7 @@
                 .eventsTable{
 					font-size:14px !important;
 					line-height:125% !important;
+                    padding-right:10px !important;
 				}
 
 				/* ======== Footer Styles ======== */
@@ -585,7 +589,7 @@
                                 	<!-- BEGIN PREHEADER // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
                                         <tr>
-                                            <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" mc:edit="preheader_content00">
+                                            <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" mc:edit="preheader_content00" id="preheaderPreview">
                                                 <div mc:edit="std_preheader_content">Preview text</div><br />
                                                 <!-- *|IFNOT:ARCHIVE_PAGE|* -->
                                                 Having trouble viewing this message? <a href="*|ARCHIVE|*" target="_blank" style="font-weight:bold;">Click here.</a><br>
