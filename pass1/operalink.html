@@ -84,7 +84,7 @@
 			* @style heading 2
 			*/
 			h2{
-				/*@editable*/ color:#7e93a7 !important;
+				/*@editable*/ color:#796e65 !important;
 				display:block;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:12px;
@@ -319,7 +319,7 @@
 			* @tip Set the styling for your email's left column content links. Choose a color that helps them stand out from your text.
 			*/
 			.leftColumnContent a:link, .leftColumnContent a:visited, /* Yahoo! Mail Override */ .leftColumnContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#796e65;
+				/*@editable*/ color:#7e93a7;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ text-decoration:none;
 			}
@@ -346,9 +346,9 @@
 			* @tip Set the styling for your email's right column content links. Choose a color that helps them stand out from your text.
 			*/
 			.rightColumnContent a:link, .rightColumnContent a:visited, /* Yahoo! Mail Override */ .rightColumnContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#796e65;
-				/*@editable*/ font-weight:normal;
-				/*@editable*/ text-decoration:underline;
+				/*@editable*/ color:#7e93a7;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ text-decoration:none;
 			}
 
 			.leftColumnContent img, .rightColumnContent img{
@@ -365,7 +365,25 @@
 				text-align:left;
                 padding-left:10px;
                 padding-right:10px;
-                padding-bottom:5px;
+                padding-bottom:10px;
+            }
+            
+            .eventsTable a:link, .eventsTable a:visited, /* Yahoo! Mail Override */ .eventsTable a .yshortcuts /* Yahoo! Mail Override */{
+                /*@editable*/ color:#7e93a7;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ text-decoration:none;
+            }
+            
+            .eventsDate {
+                color:#e31937;
+				font-family:Arial;
+				font-size:14px;
+                font-weight:bold;
+				line-height:150%;
+				text-align:left;
+                padding-left:10px;
+                padding-right:10px;
+                padding-bottom:10px;
             }
 
 			/* ========== Footer Styles ========== */
@@ -398,6 +416,10 @@
 				padding-left:20px;
 				/*@editable*/ text-align:left;
 			}
+            
+            .quickLinks {
+                color:#796e65 !important;
+            }
 
 			/**
 			* @tab Footer
@@ -606,7 +628,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
                                         <tr>
                                             <td valign="top" class="headerContent">
-                                            	<img src="http://www.operaamerica.org/content/pubs/enewsletter/2015/oc/operacenter_header.jpg" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                            	<img src="http://www.operaamerica.org/content/pubs/enewsletter/2015/ol/operalink_header.jpg" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
                                             </td>
                                         </tr>
                                     </table>
@@ -616,20 +638,14 @@
                         	<tr>
                             	<td align="center" valign="top">
                                 	<!-- OPERA CENTER MANAGER // -->
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateBody">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateBody" mc:hideable>
                                         <tr>
-                                            <td valign="top" class="bodyContent" mc:edit="fromOCmgr">
-                                                <h1>From the Opera Center</h1>
-                                                The month of September always marks a return: Students return to school, summer vacationers return to work and many of our beloved arts organizations return to the stage with new production seasons. At the Opera Center, we look forward to seeing the many familiar faces returning to us, as well!<br /><br />
- 
-                                                September also marks a season of change with regard to our rental rates. Beginning September 2, the Board Room will be available for a new low fee, while other spaces, which were discounted in previous months, will return to their regular rates. During the month of September, you can also receive a $10 discount on the hourly rate in our Rehearsal Hall. Click <a href="http://www.operaamerica.org/content/about/operacenter/index.aspx?loc=rates">here</a> for a full list of rates and further details.<br /><br />
-
-                                                Whether you’re a weekly visitor or an annual renter at the Opera Center, we look forward to welcoming you back soon!<br /><br />
-
-                                                My very best,<br />
-                                                <img src="http://gallery.mailchimp.com/134d3f3fa56cf83d132b124cb/images/fe20084d-b44f-414d-b62f-6bf09ccf81ea.png" width="100"><br />
-                                                Nicholas Roberts<br />
-                                                Opera Center Manager
+                                            <td valign="top" class="bodyContent" mc:edit="recentAnnouncements">
+                                                <h1>Recent announcements</h1>
+                                                <h2>Announcement header 1</h2>
+                                                This is copy for the first announcement with a <a href="#">link</a>.<br /><br />
+                                                <h2>Announcement header 2</h2>
+                                                This is copy for the second announcement.
                                             </td>
                                         </tr>
                                     </table>
@@ -637,12 +653,25 @@
                                     <!-- UPCOMING EVENTS // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" mc:hideable class="templateBody">
                                         <tr>
-                                            <td valign="top" style="padding-left:10px;padding-right:10px;">
-                                                <table>
+                                            <td valign="top" style="padding-left:10px;padding-right:10px;padding-bottom:15px;">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                     <tr>
-                                                        <td class="bodyContent" mc:edit="standingOvation1" style="border-top:4px solid #ffc72c;padding-left:10px;padding-right:10px;">
-                                                            <h1>Standing Ovation</h1>
-                                                            As September pulls students away from summer vacation and back into classrooms, we want to take a moment to give a standing ovation to those teachers who have profoundly shaped our careers and our characters. Tweet with <a href="https://twitter.com/intent/tweet?text=%23MyOperaCenter">#MyOperaCenter</a> to let us know the teachers who have impacted your life and profession. 
+                                                        <td class="bodyContent" mc:edit="upcomingEvents" style="border-top:4px solid #ffc72c;padding-left:10px;padding-right:10px;">
+                                                            <h1>Upcoming Events</h1>
+                                                            All events below take place at the National Opera Center.
+                                                            <tr>
+                                                        <td>
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tr mc:repeatable>
+                                                                    <td mc:edit style="width:40px;" class="eventsDate" valign="top">
+                                                                        12.26
+                                                                    </td>
+                                                                    <td mc:edit class="eventsTable" valign="top">
+                                                                        <h2>This is the title of an event</h2>
+                                                                        This is all about the event. Blah blah blah.
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -654,11 +683,26 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" mc:hideable class="templateBody">
                                         <tr>
                                             <td valign="top" style="padding-left:10px;padding-right:10px;">
-                                                <table>
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                     <tr>
-                                                        <td class="bodyContent" mc:edit="standingOvation1" style="border-top:4px solid #ffc72c;padding-left:10px;padding-right:10px;">
-                                                            <h1>Standing Ovation</h1>
-                                                            As September pulls students away from summer vacation and back into classrooms, we want to take a moment to give a standing ovation to those teachers who have profoundly shaped our careers and our characters. Tweet with <a href="https://twitter.com/intent/tweet?text=%23MyOperaCenter">#MyOperaCenter</a> to let us know the teachers who have impacted your life and profession. 
+                                                        <td class="bodyContent" mc:edit="upcomingDeadlines" style="border-top:4px solid #ffc72c;padding-left:10px;padding-right:10px;">
+                                                            <h1>Upcoming Deadlines</h1>
+                                                            This is editable text.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tr mc:repeatable>
+                                                                    <td style="width:40px;" class="eventsDate" mc:edit valign="top">
+                                                                        12.26
+                                                                    </td>
+                                                                    <td mc:edit class="eventsTable" valign="top">
+                                                                        <h2>This is the title of an event</h2>
+                                                                        This is all about the event. Blah blah blah.
+                                                                    </td>
+                                                                </tr>
+                                                            </table> 
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -677,24 +721,33 @@
                                                 <table border="0" cellpadding="20" cellspacing="0" width="100%">
                                                     
                                                     <!-- IN THE NEWS // -->
-                                                    <tr>
-                                                    	<td valign="top" class="leftColumnContent" mc:edit="upcomingEvents">
-                                                            <h1>Upcoming Events</h1>
+                                                    <tr mc:hideable>
+                                                    	<td valign="top" class="leftColumnContent" mc:edit="inTheNews">
+                                                            <h1>In the News</h1>
                                                             
-                                                            <h4>* Member Event</h4>
-                                                            <br />
-                                                            <h3>Visit <a href="http://www.operaamerica.org/Calendar">operaamerica.org/Calendar</a> for more.</h3>
+                                                            <strong>Location * 1/1/1</strong><br />
+                                                            <a href="#">Link</a><br /><br />
+                                                            <strong>Location * 1/1/1</strong><br />
+                                                            <a href="#">Link</a><br /><br />
+                                                            <strong>Location * 1/1/1</strong><br />
+                                                            <a href="#">Link</a><br /><br />
+                                                            <strong>Location * 1/1/1</strong><br />
+                                                            <a href="#">Link</a><br /><br />
+                                                            <strong>Location * 1/1/1</strong><br />
+                                                            <a href="#">Link</a>
                                                         </td>
                                                     </tr>
                                                     
                                                     <!-- MEMBER PRESSROOM // -->
-                                                    <tr>
-                                                    	<td valign="top" class="leftColumnContent" mc:edit="upcomingEvents">
-                                                            <h1>Upcoming Events</h1>
+                                                    <tr mc:hideable>
+                                                    	<td valign="top" class="leftColumnContent" mc:edit="memberPressroom">
+                                                            <h1>Member Pressroom</h1>
                                                             
-                                                            <h4>* Member Event</h4>
-                                                            <br />
-                                                            <h3>Visit <a href="http://www.operaamerica.org/Calendar">operaamerica.org/Calendar</a> for more.</h3>
+                                                            <a href="#">Link</a><br /><br />
+                                                            <a href="#">Link</a><br /><br />
+                                                            <a href="#">Link</a><br /><br />
+                                                            <a href="#">Link</a><br /><br />
+                                                            <a href="#">Link</a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -704,30 +757,33 @@
                                             	
                                                 <!-- FROM THE ARCHIVES // -->
                                                 <table border="0" cellpadding="20" cellspacing="0" width="100%">
-                                                	<tr>
-                                                    	<td valign="top" class="rightColumnContent" mc:edit="upcomingSpecials">
-                                                            <h1>Upcoming Specials</h1>
-                                                            Rent the Rehearsal Hall for your September rehearsal or event and receive $10 off the hourly rate.*<br /><br />
-                                                            <h4>*Discount applies to new reservations only and cannot be combined with any other special or discount.</h4>
+                                                	<tr mc:hideable>
+                                                    	<td valign="top" class="rightColumnContent" mc:edit="fromtheArchives">
+                                                            <h1>From the Archives</h1>
+                                                            <strong>For Contralto</strong><br />
+                                                            Francesco Cilea: <em>L'arlesiana</em><br />
+                                                            Act 3: Aria, "Esser madre è un inferno" (Rosa)<br />
+                                                            Roger Pines, Dramaturg, Lyric Opera of Chicago<br /><br />
+
+                                                            OPERA America's "Aria Talk" column focuses not on the tried-and-true audition arias you undoubtedly already know, but on somewhat more off-the-beaten-track repertoire. The hope is that this music will prove a refreshing musical and interpretive change not only for you, the performer, but also for those hearing you in auditions.<Br /><br />
+
+                                                            Read more&hellip;
+
                                                         </td>
                                                     </tr>
                                                     
                                                     <!-- MAGAZINE // -->
-                                                    <tr>
-                                                    	<td valign="top" class="rightColumnContent" mc:edit="standingOvation2" mc:hideable>
-                                                            <h1>Standing Ovation</h1>
-                                                            As September pulls students away from summer vacation and back into classrooms, we want to take a moment to give a standing ovation to those teachers who have profoundly shaped our careers and our characters. Tweet with <a href="https://twitter.com/intent/tweet?text=%23MyOperaCenter">#MyOperaCenter</a> to let us know the teachers who have impacted your life and profession. 
+                                                    <tr mc:hideable>
+                                                    	<td valign="top" class="rightColumnContent" mc:edit="magazine" mc:hideable>
+                                                            Drop in magazine information here :)
                                                         </td>
                                                     </tr>
                                                     
                                                     <!-- DID YOU KNOW // -->
-                                                    <tr>
-                                                    	<td valign="top" class="rightColumnContent" mc:edit="futureBookings">
-                                                            <h1>Future Bookings</h1>
-                                                            <h2>Professional Company Members</h2> can book spaces through <strong>September 2015</strong>.<br /><br />
-                                                            <h2>Associate Members, Educational Producing Associates or Business Members</h2> can book spaces through <strong>June 2015</strong>.<br /><br />
-                                                            <h2>Individual Members</h2> can book spaces through <strong>March 2015</strong>.<br /><br />
-                                                            <h2>Non-Members</h2> can book spaces through <strong>December 2014</strong>.<br /><br />
+                                                    <tr mc:hideable>
+                                                    	<td valign="top" class="rightColumnContent" mc:edit="didYouKnow">
+                                                            <h1>Did You Know</h1>
+                                                            Did you know goes here.
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -747,9 +803,9 @@
                                                         <td class="bodyContent" mc:edit="standingOvation1" style="border-top:4px solid #ffc72c;padding-left:10px;padding-right:10px;">
                                                             <h1>Quick Links</h1>
                                                             <h2>News and information for:</h2>
-                                                            <a href="">Jobs in Opera</a> / <a href="">Artists</a> / <a href="">Artistic Directors</a> / <a href="">Board/Governance</a> / <a href="">Education</a> / <a href="">Finance/General Operations</a> / <a href="">General Operations</a> / <a href="">Marketing/PR</a> / <a href="">Trustees/Donors</a><br /><br />
+                                                            <a href="http://www.operaamerica.org/applications/jobs/" class="quickLinks">Jobs in Opera</a> / <a href="http://www.operaamerica.org/applications/headlines.aspx?type=art" class="quickLinks">Artists</a> / <a href="http://www.operaamerica.org/applications/headlines.aspx?type=ads" class="quickLinks">Artistic Directors</a> / <a href="http://www.operaamerica.org/applications/headlines.aspx?type=bgov" class="quickLinks">Board/Governance</a> / <a href="http://www.operaamerica.org/applications/headlines.aspx?type=edu" class="quickLinks">Education</a> / <a href="http://www.operaamerica.org/applications/headlines.aspx?type=fin" class="quickLinks">Finance/General Operations</a> / <a href="http://www.operaamerica.org/applications/headlines.aspx?type=gds" class="quickLinks">General Directors</a> / <a href="http://www.operaamerica.org/applications/headlines.aspx?type=pr" class="quickLinks">Marketing/PR</a> / <a href="http://www.operaamerica.org/applications/headlines.aspx?type=trust" class="quickLinks">Trustees/Donors</a><br /><br />
                                                             <h2>Social Media:</h2>
-                                                            <a href="">Facebook</a> / <a href="">Twitter (@OPERAAmerica)</a> / <a href="">Twitter (NatOperaCenter)</a> / <a href="">YouTube</a>
+                                                            <a href="http://www.facebook.com/OPERAAmerica" class="quickLinks">Facebook</a> / <a href="http://www.twitter.com/OPERAAmerica" class="quickLinks">Twitter (@OPERAAmerica)</a> / <a href="http://www.twitter.com/NatOperaCenter" class="quickLinks">Twitter (NatOperaCenter)</a> / <a href="http://www.youtube.com/OPERAAmerica" class="quickLinks">YouTube</a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -764,7 +820,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
                                         <tr>
                                             <td valign="top" class="footerContent" mc:edit="footer_content00">
-                                                <a href="*|TWITTER:PROFILEURL|*">Follow on Twitter</a>&nbsp;&nbsp;&nbsp;<a href="*|FACEBOOK:PROFILEURL|*">Friend on Facebook</a>&nbsp;&nbsp;&nbsp;<a href="*|FORWARD|*">Forward to Friend</a>&nbsp;
+                                                <a href="*|FORWARD|*">Forward to Friend</a>&nbsp;
                                             </td>
                                         </tr>
                                         <tr>
