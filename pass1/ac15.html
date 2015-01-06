@@ -194,7 +194,7 @@
 			#templateHeader{
 				/*@editable*/ background-color:#F4F4F4;
 				/*@editable*/ border-top:1px solid #FFFFFF;
-				/*@editable*/ border-bottom:4px solid #e31937;
+				/*@editable*/ border-bottom:0;
 			}
 
 			/**
@@ -310,8 +310,20 @@
 				padding:10px;
                 padding-bottom:30px;
 				/*@editable*/ text-align:left;
-                border-top:4px solid #e31937;
+                /*border-top:4px solid #de020a;*/
 			}
+            
+            .leftColumnContentHeader{
+                /*@editable*/ color:#ffffff;
+                /*@editable*/ font-family:Arial;
+                /*@editable*/ font-size:14px;
+                font-weight:bold;
+                /*@editable*/ line-height:150%;
+                padding:10px;
+                padding-bottom:10px;
+                /*@editable*/ text-align:left;
+                /*border-top:4px solid #de020a;*/
+            }
 
 			/**
 			* @tab Columns
@@ -337,8 +349,20 @@
 				padding:10px;
                 padding-bottom:30px;
 				/*@editable*/ text-align:left;
-                border-top:4px solid #e31937;
+                border-top:0;
 			}
+            
+            .rightColumnContentHeader{
+                /*@editable*/ color:#ffffff;
+                /*@editable*/ font-family:Arial;
+                /*@editable*/ font-size:14px;
+                font-weight:bold;
+                /*@editable*/ line-height:150%;
+                padding:10px;
+                padding-bottom:10px;
+                /*@editable*/ text-align:left;
+                border-top:0;
+            }
 
 			/**
 			* @tab Columns
@@ -375,7 +399,7 @@
             }
             
             .eventsDate {
-                color:#e31937;
+                color:#de020a;
 				font-family:Arial;
 				font-size:14px;
                 font-weight:bold;
@@ -560,6 +584,11 @@
 					/*@editable*/ font-size:14px !important;
 					/*@editable*/ line-height:125% !important;
 				}
+                
+                .leftColumnContentHeader{
+                    /*@editable*/ font-size:18px !important;
+                    /*@editable*/ line-height:125% !important;
+                }
 
 				/**
 				* @tab Mobile Styles
@@ -570,6 +599,11 @@
 					/*@editable*/ font-size:14px !important;
 					/*@editable*/ line-height:125% !important;
 				}
+                
+                .rightColumnContentHeader{
+                    /*@editable*/ font-size:18px !important;
+                    /*@editable*/ line-height:125% !important;
+                }
                 
                 .eventsTable{
 					font-size:14px !important;
@@ -628,7 +662,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
                                         <tr>
                                             <td valign="top" class="headerContent">
-                                            	<img src="http://www.operaamerica.org/content/pubs/enewsletter/2015/ol/operalink_header.jpg" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                            	<a href="http://conference.operaamerica.org" target="_blank"><img src="http://www.operaamerica.org/images/email/ac15_header.png" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext /></a>
                                             </td>
                                         </tr>
                                     </table>
@@ -656,14 +690,18 @@
                                 	<!-- BEGIN COLUMNS // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns">
                                         <tr mc:repeatable>
-                                        	<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                            <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;" mc:edit="tableL">
                                             	
-                                                <table border="0" cellpadding="20" cellspacing="0" width="100%">
+                                                <table border="0" cellpadding="20" cellspacing="0" width="100%" mc:hideable>
                                                     
-                                                    <!-- IN THE NEWS // -->
-                                                    <tr mc:hideable>
-                                                    	<td valign="top" class="leftColumnContent" mc:edit="lc1">
-                                                            <h1>In the News</h1>
+                                                    <!-- LEFT COLUMN // -->
+                                                    <tr>
+                                                        <td valign="top" class="leftColumnContentHeader" style="background-color:#ff6b23;">
+                                                            This is a header
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    	<td valign="top" class="leftColumnContent">
                                                             
                                                             <strong>Location * 1/1/1</strong><br />
                                                             <a href="#">Link</a><br /><br />
@@ -680,13 +718,17 @@
                                                 </table>
                                                 
                                             </td>
-                                        	<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+                                            <td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;" mc:edit="tableR">
                                             	
                                                 <!-- FROM THE ARCHIVES // -->
-                                                <table border="0" cellpadding="20" cellspacing="0" width="100%">
-                                                	<tr mc:hideable>
-                                                    	<td valign="top" class="rightColumnContent" mc:edit="rc1">
-                                                            <h1>From the Archives</h1>
+                                                <table border="0" cellpadding="20" cellspacing="0" width="100%" mc:hideable>
+                                                    <tr>
+                                                        <td valign="top" class="rightColumnContentHeader" style="background-color:#f5c708;">
+                                                            This is a header
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    	<td valign="top" class="rightColumnContent" >
                                                             <strong>For Contralto</strong><br />
                                                             Francesco Cilea: <em>L'arlesiana</em><br />
                                                             Act 3: Aria, "Esser madre è un inferno" (Rosa)<br />
@@ -714,7 +756,7 @@
                                             <td valign="top" style="padding-left:10px;padding-right:10px;">
                                                 <table width="100%">
                                                     <tr>
-                                                        <td class="bodyContent" mc:edit="standingOvation1" style="border-top:4px solid #e31937;padding-left:10px;padding-right:10px;">
+                                                        <td class="bodyContent" mc:edit="standingOvation1" style="border-top:4px solid #de020a;padding-left:10px;padding-right:10px;">
                                                             <h1>Quick Links</h1>
                                                             <a href="http://conference.operaamerica.org/" class="quickLinks"><em>Opera Conference 2015</em> Home</a> / <a href="http://conference.operaamerica.org/register.aspx" class="quickLinks">Register</a> / <a href="http://conference.operaamerica.org/schedule.aspx" class="quickLinks">View the Schedule</a> / <a href="http://conference.operaamerica.org/OVI.aspx" class="quickLinks">OVI</a> / <a href="http://conference.operaamerica.org/about.aspx" class="quickLinks">About Opera Conference</a><br /><br />
                                                             <h2>Social Media:</h2>
