@@ -1,0 +1,814 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>*|MC:SUBJECT|*</title>
+        <style type="text/css">
+			/* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+			.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+			body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+			table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+			img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+			/* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+			body{margin:0; padding:0;}
+			img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+			table{border-collapse:collapse !important;}
+			body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+			/* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
+
+			/* ========== Page Styles ========== */
+
+			#bodyCell{padding:20px;}
+			#templateContainer{width:600px;}
+
+			/**
+			* @tab Page
+			* @section background style
+			* @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+			* @theme page
+			*/
+			body, #bodyTable{
+				/*@editable*/ background-color:#ebebeb;
+			}
+
+			/**
+			* @tab Page
+			* @section background style
+			* @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+			* @theme page
+			*/
+			#bodyCell{
+				/*@editable*/ border-top:0;
+			}
+
+			/**
+			* @tab Page
+			* @section email border
+			* @tip Set the border for your email.
+			*/
+			#templateContainer{
+				/*@editable*/ border:1px solid #e0e0e0;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 1
+			* @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+			* @style heading 1
+			*/
+			h1{
+				/*@editable*/ color:#FFFFFF !important;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:26px;
+				/*@editable*/ font-style:normal;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ letter-spacing:normal;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 2
+			* @tip Set the styling for all second-level headings in your emails.
+			* @style heading 2
+			*/
+			h2{
+				/*@editable*/ color:#4b4b4b !important;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:20px;
+				/*@editable*/ font-style:normal;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ letter-spacing:normal;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 3
+			* @tip Set the styling for all third-level headings in your emails.
+			* @style heading 3
+			*/
+			h3{
+				/*@editable*/ color:#888888 !important;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:16px;
+				/*@editable*/ font-style:italic;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ letter-spacing:normal;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Page
+			* @section heading 4
+			* @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+			* @style heading 4
+			*/
+			h4{
+				/*@editable*/ color:#888888 !important;
+				display:block;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ font-style:italic;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ letter-spacing:normal;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/* ========== Header Styles ========== */
+
+			/**
+			* @tab Header
+			* @section preheader style
+			* @tip Set the background color and bottom border for your email's preheader area.
+			* @theme header
+			*/
+			#templatePreheader{
+				/*@editable*/ background-color:#ffffff;
+				/*@editable*/ border-bottom:0;
+			}
+
+			/**
+			* @tab Header
+			* @section preheader text
+			* @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+			*/
+			.preheaderContent{
+				/*@editable*/ color:#888888;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:10px;
+				/*@editable*/ line-height:125%;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Header
+			* @section preheader link
+			* @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
+			*/
+			.preheaderContent a:link, .preheaderContent a:visited, /* Yahoo! Mail Override */ .preheaderContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#888888;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
+			/**
+			* @tab Header
+			* @section header style
+			* @tip Set the background color and borders for your email's header area.
+			* @theme header
+			*/
+			#templateHeader{
+				/*@editable*/ background-color:#F4F4F4;
+				/*@editable*/ border-top:1px solid #FFFFFF;
+				/*@editable*/ border-bottom:1px solid #CCCCCC;
+			}
+
+			/**
+			* @tab Header
+			* @section header text
+			* @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+			*/
+			.headerContent{
+				/*@editable*/ color:#505050;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:20px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ padding-top:0;
+				/*@editable*/ padding-right:0;
+				/*@editable*/ padding-bottom:0;
+				/*@editable*/ padding-left:0;
+				/*@editable*/ text-align:left;
+				/*@editable*/ vertical-align:middle;
+			}
+
+			/**
+			* @tab Header
+			* @section header link
+			* @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+			*/
+			.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#EB4102;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:none;
+			}
+
+			#headerImage{
+				height:auto;
+				max-width:600px;
+			}
+
+			#onstageImage{
+				height:auto;
+				max-width:600px;
+			}
+
+
+			/* ========== Body Styles ========== */
+
+			/**
+			* @tab Body
+			* @section body style
+			* @tip Set the background color and borders for your email's body area.
+			*/
+			.templateBody{
+				/*@editable*/ background-color:#ffffff;
+				/*@editable*/ border-top:0;
+				/*@editable*/ border-bottom:0;
+			}
+
+			/**
+			* @tab Body
+			* @section body text
+			* @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+			* @theme main
+			*/
+			.bodyContent{
+				/*@editable*/ color:#4b4b4b;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:12px;
+				/*@editable*/ line-height:150%;
+				padding-top:20px;
+				padding-right:20px;
+				padding-bottom:20px;
+				padding-left:20px;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Body
+			* @section body link
+			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+			*/
+			.bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#25539B;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ text-decoration:none;
+			}
+
+			.bodyContent img{
+				display:inline;
+				height:auto;
+				max-width:560px;
+			}
+            
+            #footerCTA {
+				/*@editable*/ color:#ffffff;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:12px;
+				/*@editable*/ line-height:150%;
+				padding-top:20px;
+				padding-right:20px;
+				padding-bottom:20px;
+				padding-left:20px;
+				/*@editable*/ text-align:left;
+				background-color: #25539B;
+			}
+
+			/**
+			* @tab Body
+			* @section body link
+			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+			*/
+			#footerCTA  a:link, #footerCTA  a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#FFFFFF;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ text-decoration:none;
+			}
+
+			#footerCTA  img{
+				display:inline;
+				height:auto;
+				max-width:560px;
+			}
+            
+            
+            /**
+			* @tab Columns
+			* @section left column text
+			* @tip Set the styling for your email's left column content text. Choose a size and color that is easy to read.
+			*/
+			.leftColumnContent {
+				/*@editable*/ color:#4b4b4b;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:12px;
+				/*@editable*/ line-height:150%;
+				padding:0;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Columns
+			* @section right column text
+			* @tip Set the styling for your email's right column content text. Choose a size and color that is easy to read.
+			*/
+			.rightColumnContent {
+				/*@editable*/ color:#4b4b4b;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:10px;
+				/*@editable*/ line-height:150%;
+				padding-top:10px;
+                padding-left:10px;
+                padding-bottom:10px;
+                padding-right:0;
+				text-align:right;
+                width:160px;
+                border-top:6px solid #25539B;
+			}
+            
+            .eventDate {
+                color:#25539B;
+                font-family:Arial;
+                font-weight:bold;
+                font-size:11px;
+                text-transform:uppercase;
+            }
+            
+            .eventTime {
+                color:#4b4b4b;
+                font-family:Arial;
+                font-weight:bold;
+                font-size:11px;
+            }
+            
+            .eventLocale {
+                color:#4b4b4b;
+                font-family:Arial;
+                font-weight:normal;
+                font-size:11px;
+            }
+            
+            .eventPrice {
+                color:#25539B;
+                font-family:Arial;
+                font-weight:bold;
+                font-size:11px;
+            }
+            
+            .ticketBuyButton {
+                color:#ffffff;
+                font-family:Arial;
+                font-weight:bold;
+                font-size:11px;
+                background-color:#25539B;
+                padding:5px;
+            }
+            
+            .upcomingEventsHeader {
+                color:#4b4b4b;
+                /* border-top:6px solid #25539B; */
+                font-family:Arial;
+                font-weight:bold;
+                font-size:18px;
+                padding-top:10px;
+                padding-bottom:10px;
+                text-transform:uppercase;
+            }
+
+			/* ========== Footer Styles ========== */
+
+			/**
+			* @tab Footer
+			* @section footer style
+			* @tip Set the background color and borders for your email's footer area.
+			* @theme footer
+			*/
+			#templateFooter{
+				/*@editable*/ background-color:#4b4b4b;
+				/*@editable*/ border-top:0;
+			}
+            
+            
+
+			/**
+			* @tab Footer
+			* @section footer text
+			* @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+			* @theme footer
+			*/
+			.footerContent{
+				/*@editable*/ color:#888888;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:10px;
+				/*@editable*/ line-height:150%;
+				padding-top:20px;
+				padding-right:20px;
+				padding-bottom:20px;
+				padding-left:20px;
+				/*@editable*/ text-align:left;
+			}
+
+			/**
+			* @tab Footer
+			* @section footer link
+			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+			*/
+			.footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
+				/*@editable*/ color:#888888;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ text-decoration:none;
+			}
+
+			/* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
+
+            @media only screen and (max-width: 480px){
+				/* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
+				body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} /* Prevent Webkit platforms from changing default text sizes */
+                body{width:100% !important; min-width:100% !important;} /* Prevent iOS Mail from adding padding to the body */
+
+				/* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
+				#bodyCell{padding:10px !important;}
+
+				/* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
+
+				/* ======== Page Styles ======== */
+
+				/**
+				* @tab Mobile Styles
+				* @section template width
+				* @tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.
+				*/
+				#templateContainer{
+					max-width:600px !important;
+					/*@editable*/ width:100% !important;
+				}
+                
+                .leftColumnContent {
+                    font-size:14px !important;
+                    display:block !important;
+                    width:100% !important;
+                }
+
+                
+				/**
+				* @tab Mobile Styles
+				* @section heading 1
+				* @tip Make the first-level headings larger in size for better readability on small screens.
+				*/
+				h1{
+					/*@editable*/ font-size:20px !important;
+					/*@editable*/ line-height:100% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section heading 2
+				* @tip Make the second-level headings larger in size for better readability on small screens.
+				*/
+				h2{
+					/*@editable*/ font-size:18px !important;
+					/*@editable*/ line-height:100% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section heading 3
+				* @tip Make the third-level headings larger in size for better readability on small screens.
+				*/
+				h3{
+					/*@editable*/ font-size:16px !important;
+					/*@editable*/ line-height:100% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section heading 4
+				* @tip Make the fourth-level headings larger in size for better readability on small screens.
+				*/
+				h4{
+					/*@editable*/ font-size:14px !important;
+					/*@editable*/ line-height:100% !important;
+				}
+
+				/* ======== Header Styles ======== */
+
+				#templatePreheader{display:none !important;} /* Hide the template preheader to save space */
+
+				/**
+				* @tab Mobile Styles
+				* @section header image
+				* @tip Make the main header image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+				*/
+				#headerImage{
+					height:auto !important;
+					/*@editable*/ max-width:600px !important;
+					/*@editable*/ width:100% !important;
+				}
+
+				#onstageImage{
+					height:auto !important;
+					/*@editable*/ max-width:600px !important;
+					/*@editable*/ width:100% !important;
+				}
+
+				/**
+				* @tab Mobile Styles
+				* @section header text
+				* @tip Make the header content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+				*/
+				.headerContent{
+					/*@editable*/ font-size:20px !important;
+					/*@editable*/ line-height:125% !important;
+				}
+
+				/* ======== Body Styles ======== */
+
+				/**
+				* @tab Mobile Styles
+				* @section body text
+				* @tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+				*/
+				.bodyContent{
+					/*@editable*/ font-size:14px !important;
+					/*@editable*/ line-height:135% !important;
+				}
+
+				#footerCTA {
+					/*@editable*/ font-size:14px !important;
+					/*@editable*/ line-height:135% !important;
+				}
+
+				/* ======== Footer Styles ======== */
+
+				/**
+				* @tab Mobile Styles
+				* @section footer text
+				* @tip Make the body content text larger in size for better readability on small screens.
+				*/
+                
+				.footerContent{
+					/*@editable*/ font-size:10px !important;
+					/*@editable*/ line-height:115% !important;
+				}
+                
+                .rightColumnContent {
+                    padding-top:20px !important;
+                    padding-left:0 !important;
+                    display:block !important;
+                    width:100% !important;
+                    border-top:none !important;
+                    text-align:left !important;
+                    line-height:180% !important;
+                }
+
+                .eventTable {
+                	display:block !important;
+                	width:100% !important;
+                	border:none !important;
+                	padding-bottom:25px !important;
+                	padding-left:0 !important;
+                	padding-right:0 !important;
+                }
+                
+                .specialTable {
+                    width:100% !important;
+                    text-align:left !important;
+                }
+                
+                .eventDate {
+                    font-size:13px !important;
+                }
+
+                .eventTime {
+                    font-size:13px !important;
+                }
+
+                .eventLocale {
+                    font-size:13px !important;
+                }
+
+                .eventPrice {
+                    font-size:13px !important;
+                }
+
+                .ticketBuyButton {
+                    font-size:13px !important;
+                }
+                
+
+				.footerContent a{display:block !important;} /* Place footer social and utility links on their own lines, for easier access */
+			}
+		</style>
+    </head>
+    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+    	<center>
+        	<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+            	<tr>
+                	<td align="center" valign="top" id="bodyCell">
+                    	<!-- BEGIN TEMPLATE // -->
+                    	<table border="0" cellpadding="0" cellspacing="0" id="templateContainer">
+                        	<tr>
+                            	<td align="center" valign="top">
+                                	<!-- BEGIN PREHEADER // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
+                                        <tr>
+                                            <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" mc:edit="preheader_content00">
+                                                <div mc:edit="std_preheader_content">Soprano Antonina Chehovska, September 13 at 4:00 p.m.</div><br>
+                                                <!-- *|IFNOT:ARCHIVE_PAGE|* -->
+                                                Having trouble viewing this message? <a href="*|ARCHIVE|*" target="_blank" style="font-weight:bold;">Click here.</a><br>
+                                                <!-- *|END:IF|* -->
+
+                                                <a href="*|FORWARD|*" target="_blank" style="font-weight:bold;">Forward to a friend
+                                                </a>
+                                            </td>
+                                            <td valign="center" width="180" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:0;">
+                                                <a href="http://www.operaamerica.org" target="_blank"><img src="http://www.operaamerica.org/content/pubs/eblasts/2013/elements/fy14headers/logosmall.png" border="0" style="float:right;"></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END PREHEADER -->
+                                </td>
+                            </tr>
+                        	<tr>
+                            	<td align="center" valign="top">
+                                	<!-- BEGIN HEADER // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
+                                        <tr>
+                                            <td valign="top" class="headerContent">
+                                            	<a href="http://operaamerica.org/Recitals"><img src="https://gallery.mailchimp.com/134d3f3fa56cf83d132b124cb/images/92e1f91b-05db-4626-aa26-0889128e58bd.png" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner="" mc:allowtext=""></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END HEADER -->
+                                </td>
+                            </tr>
+                        	<tr>
+                            	<td align="center" valign="top">
+                                	<!-- BEGIN BODY // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateBody">
+                                        <tr>
+                                            <td valign="top" class="bodyContent">
+                                                
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td valign="top" mc:edit="body_content" class="leftColumnContent">
+                                                            <h2>Emerging Artist Recital Series</h2>
+                                                            <strong>Opera Columbus Cooper-Bing Vocal Competition Winner<br>
+                                                            	Antonina Chehovska, Soprano</strong><br><br>
+                                                        	Experience one of opera’s brightest up-and-coming stars when soprano Antonina Chehovska, winner of Opera Columbus’ Cooper-Bing Vocal Competition, takes the stage at the National Opera Center.<br><br>
+
+															Among her roles is Tchaikovsky’s heroine in <em>Eugene Onegin</em>, for which she has garnered substantial praise:
+															<div style="padding-left:30px;"><em>"Chehovska used her generous instrument and finely tuned dramatic sense to portray a reckless young woman and a wise and experienced aristocrat. Her Tatiana &hellip; was filled with passion and trepidation; she employed facial and body gesture along with word coloring and dynamic variety to make this long scene seem brief."</em></div><div align="right">&ndash; Voce di Meche</div>
+
+                                                        </td>
+                                                        <td valign="top" style="padding-right:0;padding-bottom:5px;" mc:edit="ticketInfo" class="rightColumnContent">
+                                                            <table class="specialTable" align="right">
+                                                                <tr>
+                                                                    <td style="padding-right:0;text-align:right;" class="specialTable">
+                                                                        <span class="eventDate">Sunday, September 13</span><br>
+                                                                        <span class="eventTime">4:00 p.m.</span><br>
+                                                                        <span class="eventLocale">The National Opera Center<br>
+                                                                        330 Seventh Avenue<br>
+                                                                        New York, NY 10001</span><br><br>
+                                                                        <span class="eventPrice"><span style="color:black;">General Admission: $25<br>
+                                                                        Members: $10</span></span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <table align="right">
+                                                                            <tr>
+                                                                                <td class="ticketBuyButton">
+                                                                                    <a href="http://operaamerica.org/Recitals" style="color:white;">Buy Tickets >></a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+ 
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td align="center" valign="top">
+                                	<!-- BEGIN HEADER // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td valign="top" style="border-top:10px solid #25539B;" class="headerContent">
+                                            	<a href="http://operaamerica.org/Onstage"><img src="https://gallery.mailchimp.com/134d3f3fa56cf83d132b124cb/images/2e1b4f9b-d74e-4890-8de2-188be82b712c.jpg" style="max-width:600px;" id="onstageImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner="" mc:allowtext=""></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END HEADER -->
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td align="center" valign="top">
+                                    <!-- // END BODY1 -->
+                                    <!-- // START UPCOMING EVENTS -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateBody">
+                                        <tr>
+                                            <td valign="top" class="bodyContent" mc:hideable="" mc:edit="upcoming_events" style="border-top:0;">
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td class="upcomingEventsHeader" style="padding-top:0;">
+                                                            Upcoming Events
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <table width="100%">
+                                                	<tr>
+                                                		<td width="33%" class="eventTable" style="padding-right:5px;border-right:1px dotted #888888;font-family:arial;font-size:12px;" valign="top">
+                                                			<a href="http://operaamerica.org/Masters"><img src="https://gallery.mailchimp.com/134d3f3fa56cf83d132b124cb/images/8acfedbf-521f-4bb2-8dcb-e83e8c5661ce.png" style="width:50px;padding-right:10px;padding-bottom:5px;" width="50" align="left"></a>
+                                                			<strong style="font-style:italic;">Crafting an Opera with Carlisle Floyd</strong><br>Libretto and Piano/Vocal Score
+                                                		</td>
+                                                		<td width="34%" class="eventTable" style="padding-right:5px;padding-left:5px;border-right:1px dotted #888888;font-family:arial;font-size:12px;" valign="top">
+                                                			<a href="http://operaamerica.org/CreatorsInConcert"><img src="https://gallery.mailchimp.com/134d3f3fa56cf83d132b124cb/images/aea30173-9cc6-4013-93d4-bc0858c12355.png" style="width:50px;padding-right:10px;" width="50" align="left"></a>
+                                                			<strong style="font-style:italic;">Creators in Concert</strong><br>Jennifer Higdon, Composer
+                                                		</td>
+                                                		<td width="33%" class="eventTable" style="padding-left:5px;font-family:arial;font-size:12px;" valign="top">
+                                                			<a href="http://operaamerica.org/Conversations"><img src="https://gallery.mailchimp.com/134d3f3fa56cf83d132b124cb/images/d4ac31e8-8190-432a-966d-f0ac33dc787d.png" style="width:50px;padding-right:10px;" width="50" align="left"></a>
+                                                			<strong style="font-style:italic;">Conversations</strong><br>Stephen Lord, Conductor
+                                                		</td>
+                                                	</tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END UPCOMING EVENTS -->
+                                    <!-- // START ONSTAGE CTA -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateBody">
+                                        <tr>
+                                            <td valign="top" id="footerCTA" mc:hideable="" mc:edit="extraBody">
+                                                Watch free live streams of all <em>Onstage at the Opera Center</em> events at <a href="http://operaamerica.org/Live" style="color:#ffffff;">operaamerica.org/Live</a>.<br>
+                                                View recordings of previous events at <a href="http://youtube.com/OPERAAmerica">youtube.com/OPERAAmerica</a>.
+
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END ONSTAGE CTA -->
+                                </td>
+                            </tr>
+                        	<tr>
+                            	<td align="center" valign="top">
+                                	<!-- BEGIN FOOTER // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
+                                        <tr>
+                                            <td valign="top" class="footerContent" mc:edit="footer_content00">
+                                                <a href="http://www.twitter.com/OPERAAmerica">Follow on Twitter</a>&nbsp;&nbsp;&nbsp;<a href="http://www.facebook.com/OPERAAmerica">Like on Facebook</a>&nbsp;&nbsp;&nbsp;<a href="*|FORWARD|*">Forward to Friend</a>&nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="footerContent" style="padding-top:0;" mc:edit="footer_content01">
+                                                <em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
+                                                <br>
+                                                *|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*
+                                                <br>
+                                                <br>
+                                                <strong>Our mailing address is:</strong>
+                                                <br>
+                                                *|HTML:LIST_ADDRESS_HTML|* *|END:IF|* 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="footerContent" style="padding-top:0; padding-bottom:40px;" mc:edit="footer_content02">
+                                            	<a href="*|UNSUB|*">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp;<a href="*|UPDATE_PROFILE|*">update subscription preferences</a>&nbsp;
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END FOOTER -->
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- // END TEMPLATE -->
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>
